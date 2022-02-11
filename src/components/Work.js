@@ -22,6 +22,7 @@ const Work = (props) => {
   let navigate = useNavigate();
 
   const [hover, setHover] = useState(-1);
+  const [hovered, setHovered] = useState(false);
   const [dimensions, setDimensions] = useState({ 
     height: window.innerHeight,
     width: window.innerWidth
@@ -42,7 +43,17 @@ const Work = (props) => {
     return _ => {
       window.removeEventListener('resize', debouncedHandleResize);
     }
-  });
+  }, [dimensions.width, dimensions.height]);
+
+  const mouseEnter = (index) => {
+    setHover(index);
+    setHovered(true);
+  }
+
+  const mouseLeave = () => {
+    setHover(-1);
+    setHovered(false);
+  }
 
   const CustomizedImageListItemBarMobile = styled(ImageListItemBar)`
     .css-dasnyc-MuiImageListItemBar-title {
@@ -63,12 +74,13 @@ const Work = (props) => {
       {props.itemData.map((item, index) => (
         <ImageListItem
         key={index}
+        className='pointer'
         onClick={e => {
           console.log(item.title);
           navigate(item.url);
         }}
-        onMouseEnter={() => setHover(index)}
-        onMouseLeave={() => setHover(-1)}
+        onMouseEnter={() => mouseEnter(index)}
+        onMouseLeave={() => mouseLeave()}
         >
           <img
             src={`${item.img}?w=426&h=240&fit=crop&auto=format`}
@@ -88,16 +100,18 @@ const Work = (props) => {
             position="bottom"
           />
           : null}
-          {hover == index ? 
-          <CustomizedImageListItemBarDesktop
-            sx={{
-              background: 'rgba(0,0,0,0.4) 65%',
-              'textAlign': 'center',
-              height: '100%',
-            }}
-            title={item.title}
-          />
-          : null}
+          {/* {hover == index ?  */}
+          <div style={{transition: 'opacity 0.25s', opacity: hover===index ? 1 : 0}}>
+            <CustomizedImageListItemBarDesktop
+              sx={{
+                background: 'rgba(0,0,0,0.4) 65%',
+                'textAlign': 'center',
+                height: '100%',
+              }}
+              title={item.title}
+            />
+          </div>
+          {/* : null} */}
         </ImageListItem>
       ))}
     </ImageList>

@@ -1,0 +1,27 @@
+.root {
+    position: sticky;
+    top: 0rem;
+    z-index: 1;
+    background: #000;
+  }
+
+.selected {
+    border-bottom: 1px solid;
+    color: #ffffff;
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.selectedTransparent {
+    transition: all 0.15s ease-in-out;
+    border-bottom: 1px solid transparent;
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.selectedTransparent:hover {
+    border-bottom: 1px solid;
+    color: #ffffff;
+}
