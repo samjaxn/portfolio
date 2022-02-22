@@ -9,6 +9,7 @@ import '../css/Details.css';
 const Details = (props) => {
 	// const {state} = useLocation();
 	// const { img, title } = state; // Read values passed on state
+	//console.log(props.item);
 
   return (
 			<Grid container spacing={0}>
@@ -16,7 +17,7 @@ const Details = (props) => {
 					<DetailsInfo title={props.item.title}/>
 				</Grid>
 				<Grid item xs={12} md={8}>
-					<DetailsContent img={props.item.img}/>
+					<DetailsContent img={props.item.img} content={props.item.content}/>
 				</Grid>
 			</Grid>
   );

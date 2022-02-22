@@ -21,6 +21,7 @@ function debounce(fn, ms) {
 const Work = (props) => {
   let navigate = useNavigate();
 
+  const [isLoaded, setIsLoaded] = useState(false);
   const [hover, setHover] = useState(-1);
   const [hovered, setHovered] = useState(false);
   const [dimensions, setDimensions] = useState({ 
@@ -83,10 +84,15 @@ const Work = (props) => {
         onMouseLeave={() => mouseLeave()}
         >
           <img
+            onLoad={() => {
+              setIsLoaded(true);
+            }}
+            className='imageLoad'
+            style={{ opacity: isLoaded ? 1 : 0 }}
             src={`${item.img}?w=426&h=240&fit=crop&auto=format`}
             srcSet={`${item.img}?w=426&h=240&fit=crop&auto=format&dpr=2 2x`}
             alt={item.title}
-            loading="lazy"
+            // loading="lazy"
           />
           {isMobile ? 
           <CustomizedImageListItemBarMobile
