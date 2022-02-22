@@ -20,7 +20,10 @@ const DetailsInfo = (props) => {
   return (
   	<div className={classes.root}>
 			<h2>{props.title}</h2>
-			<p className={classes.p}>I dont know just some filler text</p>
+			<p>I dont know just some filler text</p>
+			{props.info.map((info, index) => (
+				<p>{info}</p>
+			))}
 		</div>
 		// <StickyContainer>
 		// 	<Sticky>{({ style }) =>	<h2>{props.title}</h2>}</Sticky>

@@ -14,7 +14,7 @@ const Details = (props) => {
   return (
 			<Grid container spacing={0}>
 				<Grid item xs={12} md={4}>
-					<DetailsInfo title={props.item.title}/>
+					<DetailsInfo title={props.item.title} info={props.item.info}/>
 				</Grid>
 				<Grid item xs={12} md={8}>
 					<DetailsContent img={props.item.img} content={props.item.content}/>
