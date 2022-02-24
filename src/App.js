@@ -8,9 +8,9 @@ import './App.css';
 function App() {
   return (
     <Container maxWidth={'false'}>
-        <Header />
-        <Main />
-        <Footer />
+      <Header />
+      <Main />
+      <Footer />
     </Container>
   );
 }

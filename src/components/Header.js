@@ -6,25 +6,6 @@ import { makeStyles } from "@mui/styles";
 import { isMobile } from 'react-device-detect';
 import '../css/Header.css';
 
-// const NavigationLinks = () => {
-// 	let navigate = useNavigate();
-// 	const location = useLocation();
-
-// 	return (
-//     <React.Fragment>
-//       <Grid item xs={4}>
-// 				<h3 className={location.pathname !== '/about' && location.pathname !== '/contact' ? 'selected' : 'selectedTransparent' } onClick={e => navigate('/')} >WORK</h3>
-//       </Grid>
-//       <Grid item xs={4}>
-// 				<h3 className={location.pathname == '/about' ? 'selected' : 'selectedTransparent' } onClick={e => navigate('/about')}>ABOUT</h3>
-//       </Grid>
-//       <Grid item xs={4}>
-// 				<h3 className={location.pathname == '/contact' ? 'selected' :'selectedTransparent' } onClick={e => navigate('/contact')}>CONTACT</h3>
-//       </Grid>
-//     </React.Fragment>
-//   );
-// }
-
 const NavigationLinks = () => {
 	let navigate = useNavigate();
 	const location = useLocation();
