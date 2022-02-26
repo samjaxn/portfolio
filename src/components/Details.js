@@ -13,10 +13,10 @@ const Details = (props) => {
 
   return (
 			<Grid container spacing={0}>
-				<Grid item xs={12} md={4}>
+				<Grid item xs={12} md={4} lg={4} xl={4}>
 					<DetailsInfo title={props.item.title} info={props.item.info}/>
 				</Grid>
-				<Grid item xs={12} md={8}>
+				<Grid item xs={12} md={8} lg={7} xl={6}>
 					<DetailsContent img={props.item.img} content={props.item.content}/>
 				</Grid>
 			</Grid>

@@ -9,6 +9,54 @@ import {
   Route
 } from "react-router-dom";
 
+//TITLES
+import andrasTitle from '../content/andras/title.png';
+import basketballTitle from '../content/basketball/title.png';
+import bullyTitle from '../content/bully/title.png';
+import hongShingTitle from '../content/hongShing/title.png';
+import jordanAnimationTitle from '../content/jordanAnimation/title.png';
+import jordanShootTitle from '../content/jordanShoot/title.png';
+import jordanTransformationTitle from '../content/jordanTransform/title.png';
+import knitShoeTitle from '../content/knitShoe/title.png';
+import shoeLaundryTitle from '../content/shoeLaundry/title.png';
+import soleDisplaceTitle from '../content/soleDisplace/title.png';
+
+//ANDRAS
+
+
+//BASKETBALL
+
+
+//BULLY
+
+
+//HONG SHING
+
+
+//JORDAN ANIMATION
+
+
+//JORDAN SHOOT
+
+
+//JORDAN TRANSFORMATION
+
+
+//KNIT SHOE
+import knitFull from '../content/knitShoe/full.mp4';
+import knitFullTest from '../content/knitShoe/fullTest.png';
+import knitLaces from '../content/knitShoe/laces1.png';
+import knitSide from '../content/knitShoe/side.png';
+import knitTest from '../content/knitShoe/test1.png';
+import knitTop1 from '../content/knitShoe/top1.png';
+import knitTop2 from '../content/knitShoe/top2.png';
+
+//SHOE LAUNDRY
+
+
+//SOLE DISPLACEMENT
+
+
 const Main = () => {
   return (
     <Routes>
@@ -26,161 +74,90 @@ export default Main;
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
-    url: 'breakfast',
+    img: knitShoeTitle,
+    title: 'Knit Effect',
+    url: 'knit-effect',
     info: [
       'testing',
-      'this'
+      'this',
+      '',
+      'test again'
     ],
     content: [
-      { type: 'video', source: 'https://player.vimeo.com/video/679228445?h=5774d8174f' },
-      { type: 'image', source: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e' },
-      { type: 'image', source: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e' },
-      { type: 'image', source: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e' },
+      { type: 'link', source: 'https://player.vimeo.com/video/679228445?h=5774d8174f' },
+      { type: 'video', source: knitFull },
+      { type: 'image', source: knitTop2 },
+      { type: 'image', source: knitSide },
+      { type: 'image', source: knitLaces },
+      { type: 'image', source: knitTest },
+      { type: 'image', source: knitTop1 },
+      { type: 'image', source: knitFullTest },
     ]
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
-    url: 'burger',
+    img: soleDisplaceTitle,
+    title: 'Sole Displacement',
+    url: 'sole-displacement',
     info: [],
     content: [
-      { type: 'video', source: 'https://www.youtube.com/embed/OAAU2x_rmWE' },
+      { type: 'link', source: 'https://www.youtube.com/embed/OAAU2x_rmWE' },
       { type: 'image', source: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d' }
     ]
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
-    url: 'camera',
+    img: shoeLaundryTitle,
+    title: 'Shoe Laundry',
+    url: 'shoe-laundry',
     info: [],
     content: []
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
-    url: 'coffee',
+    img: hongShingTitle,
+    title: 'Hong Shing',
+    url: 'hong-shing',
     info: [],
     content: []
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
-    url: 'hats',
+    img: andrasTitle,
+    title: 'Andras',
+    url: 'andras',
     info: [],
     content: []
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
-    url: 'honey',
+    img: jordanTransformationTitle,
+    title: 'Jordan OG',
+    url: 'jordan-og',
     info: [],
     content: []
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
-    url: 'basketball',
+    img: bullyTitle,
+    title: 'Bully',
+    url: 'bully',
     info: [],
     content: []
   },
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
-    url: 'fern',
+    img: jordanAnimationTitle,
+    title: 'Jordan Waves',
+    url: 'jordan-waves',
     info: [],
     content: []
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
-    url: 'mushrooms',
+    img: basketballTitle,
+    title: 'Bounce',
+    url: 'bounce',
     info: [],
     content: []
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
-    url: 'tomato-basil',
-    info: [],
-    content: []
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
-    url: 'sea-star',
-    info: [],
-    content: []
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
-    url: 'bike',
+    img: jordanShootTitle,
+    title: 'Shattered',
+    url: 'shattered',
     info: [],
     content: []
   },
 ];
-
-// const itemData = [
-//   {
-//     img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-//     title: 'Breakfast',
-//     url: 'breakfast',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-//     title: 'Burger',
-//     url: 'burger',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-//     title: 'Camera',
-//     url: 'camera',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-//     title: 'Coffee',
-//     url: 'coffee',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-//     title: 'Hats',
-//     url: 'hats',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-//     title: 'Honey',
-//     url: 'honey',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-//     title: 'Basketball',
-//     url: 'basketball',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-//     title: 'Fern',
-//     url: 'fern',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-//     title: 'Mushrooms',
-//     url: 'mushrooms',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-//     title: 'Tomato basil',
-//     url: 'tomato-basil',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-//     title: 'Sea star',
-//     url: 'sea-star',
-//   },
-//   {
-//     img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-//     title: 'Bike',
-//     url: 'bike',
-//   },
-// ];
