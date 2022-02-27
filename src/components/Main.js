@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Work from './Work';
 import About from './About';
 import Contact from './Contact';
@@ -6,7 +6,8 @@ import Details from './Details';
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
+  useLocation 
 } from "react-router-dom";
 
 //TITLES
@@ -22,16 +23,37 @@ import shoeLaundryTitle from '../content/shoeLaundry/title.png';
 import soleDisplaceTitle from '../content/soleDisplace/title.png';
 
 //ANDRAS
-
+import andrasMainVideo from '../content/andras/main.mp4';
+import andrasWavesVideo from '../content/andras/waves.mp4';
+import andrasParticles from '../content/andras/loading.mp4';
+import andrasMain1 from '../content/andras/main1.png';
+import andrasMain2 from '../content/andras/main2.png';
+import andrasMain3 from '../content/andras/main3.png';
+import andrasWaves1 from '../content/andras/waves1.png';
 
 //BASKETBALL
-
+import ball1 from '../content/basketball/ball1.png';
+import ball2 from '../content/basketball/ball2.png';
 
 //BULLY
-
+import bullyAnimation from '../content/bully/rockAnimationCompress.mp4';
+import bullyGlass1 from '../content/bully/glass1.png';
+import bullyGlass2 from '../content/bully/glass2.png';
+import bullyRock1 from '../content/bully/rock1.png';
+import bullyRock2 from '../content/bully/rock2.png';
+import bullyRockAlpha1 from '../content/bully/rockAlpha1.png';
+import bullyRockAlpha2 from '../content/bully/rockAlpha2.png';
+import bullyRockAlpha3 from '../content/bully/rockAlpha3.png';
+import bullySpheres1 from '../content/bully/spheres1.png';
 
 //HONG SHING
-
+import hongShingBall from '../content/hongShing/ball1.png';
+import hongShingBallTest from '../content/hongShing/ballTest.png';
+import hongShingCan from '../content/hongShing/can.png';
+import hongShingCards from '../content/hongShing/cards.png';
+import hongShingDragon from '../content/hongShing/dragon.png';
+import hongShingJersey from '../content/hongShing/jersey.png';
+import hongShingSkateboard from '../content/hongShing/skateboard.png';
 
 //JORDAN ANIMATION
 
@@ -58,6 +80,12 @@ import knitTop2 from '../content/knitShoe/top2.png';
 
 
 const Main = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <Routes>
       <Route path="/" element={<Work itemData={itemData} />} />
@@ -116,14 +144,31 @@ const itemData = [
     title: 'Hong Shing',
     url: 'hong-shing',
     info: [],
-    content: []
+    content: [
+      { type: 'link', source: 'https://vimeo.com/679192898' },
+      { type: 'image', source: hongShingDragon },
+      { type: 'image', source: hongShingBall },
+      { type: 'image', source: hongShingJersey },
+      { type: 'image', source: hongShingSkateboard },
+      { type: 'image', source: hongShingCan },
+      { type: 'image', source: hongShingBallTest },
+      { type: 'image', source: hongShingCards },
+    ]
   },
   {
     img: andrasTitle,
     title: 'Andras',
     url: 'andras',
     info: [],
-    content: []
+    content: [
+      { type: 'video', source: andrasMainVideo },
+      { type: 'video', source: andrasWavesVideo },
+      { type: 'video', source: andrasParticles },
+      { type: 'image', source: andrasMain1 },
+      { type: 'image', source: andrasMain2 },
+      { type: 'image', source: andrasWaves1 },
+      { type: 'image', source: andrasMain3 },
+    ]
   },
   {
     img: jordanTransformationTitle,
@@ -137,7 +182,17 @@ const itemData = [
     title: 'Bully',
     url: 'bully',
     info: [],
-    content: []
+    content: [
+      { type: 'video', source: bullyAnimation },
+      { type: 'image', source: bullyTitle },
+      { type: 'image', source: bullyRock2 },
+      { type: 'image', source: bullyGlass2 },
+      { type: 'image', source: bullyGlass1 },
+      { type: 'image', source: bullySpheres1 },
+      { type: 'image', source: bullyRock1 },
+      { type: 'image', source: bullyRockAlpha2 },
+      { type: 'image', source: bullyRockAlpha3 },
+    ]
   },
   {
     img: jordanAnimationTitle,
@@ -151,7 +206,12 @@ const itemData = [
     title: 'Bounce',
     url: 'bounce',
     info: [],
-    content: []
+    content: [
+      { type: 'link', source: 'https://vimeo.com/679222708'},
+      { type: 'image', source: basketballTitle },
+      { type: 'image', source: ball1 },
+      { type: 'image', source: ball2 }
+    ]
   },
   {
     img: jordanShootTitle,
