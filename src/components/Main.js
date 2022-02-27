@@ -56,13 +56,26 @@ import hongShingJersey from '../content/hongShing/jersey.png';
 import hongShingSkateboard from '../content/hongShing/skateboard.png';
 
 //JORDAN ANIMATION
-
+import jordanAnimation1 from '../content/jordanAnimation/blue1.png';
+import jordanAnimation2 from '../content/jordanAnimation/blue2.png';
+import jordanAnimation3 from '../content/jordanAnimation/blue3.png';
+import jordanAnimation4 from '../content/jordanAnimation/blue4.png';
+import jordanAnimation5 from '../content/jordanAnimation/blue5.png';
+import jordanAnimation6 from '../content/jordanAnimation/blue6.png';
+import jordanAnimation7 from '../content/jordanAnimation/blue7.png';
 
 //JORDAN SHOOT
-
+import jordanShoot1 from '../content/jordanShoot/orange2.png';
+import jordanShoot2 from '../content/jordanShoot/orange3.png';
+import jordanShoot3 from '../content/jordanShoot/orange4.png';
+import jordanShoot4 from '../content/jordanShoot/orange5.png';
+import jordanShootTest from '../content/jordanShoot/orangeTest.png';
+import jordanShootRed from '../content/jordanShoot/red.png';
 
 //JORDAN TRANSFORMATION
-
+import jordanTransform1 from '../content/jordanTransform/jordan1.png';
+import jordanTransform2 from '../content/jordanTransform/jordan2.png';
+import jordanTransform3 from '../content/jordanTransform/jordan3.png';
 
 //KNIT SHOE
 import knitFull from '../content/knitShoe/full.mp4';
@@ -74,10 +87,25 @@ import knitTop1 from '../content/knitShoe/top1.png';
 import knitTop2 from '../content/knitShoe/top2.png';
 
 //SHOE LAUNDRY
-
+import shoeLaundryBottleTest from '../content/shoeLaundry/bottleTest.png';
+import shoeLaundryBox1 from '../content/shoeLaundry/box1.png';
+import shoeLaundryBox2 from '../content/shoeLaundry/box2.png';
+import shoeLaundryBox3 from '../content/shoeLaundry/box3.png';
+import shoeLaundryBrush from '../content/shoeLaundry/brush.png';
+import shoeLaundryCloth from '../content/shoeLaundry/cloth.png';
+import shoeLaundryFoam1 from '../content/shoeLaundry/foam1.png';
+import shoeLaundryFoam2 from '../content/shoeLaundry/foam2.png';
+import shoeLaundryFoam3 from '../content/shoeLaundry/foam3.png';
+import shoeLaundryFull1 from '../content/shoeLaundry/full1.png';
+import shoeLaundryFull2 from '../content/shoeLaundry/full2.png';
 
 //SOLE DISPLACEMENT
-
+import soleDisplace1 from '../content/soleDisplace/sole1.png';
+import soleDisplace2 from '../content/soleDisplace/sole2.png';
+import soleDisplace3 from '../content/soleDisplace/sole3.png';
+import soleDisplace4 from '../content/soleDisplace/sole4.png';
+import soleDisplace5 from '../content/soleDisplace/sole5.png';
+import soleDisplace6 from '../content/soleDisplace/sole6.png';
 
 const Main = () => {
   const { pathname } = useLocation();
@@ -128,8 +156,13 @@ const itemData = [
     url: 'sole-displacement',
     info: [],
     content: [
-      { type: 'link', source: 'https://www.youtube.com/embed/OAAU2x_rmWE' },
-      { type: 'image', source: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d' }
+      { type: 'link', source: 'https://vimeo.com/679224617' },
+      { type: 'image', source: soleDisplace1 },
+      { type: 'image', source: soleDisplace2 },
+      { type: 'image', source: soleDisplace3 },
+      { type: 'image', source: soleDisplace4 },
+      { type: 'image', source: soleDisplace5 },
+      { type: 'image', source: soleDisplace6 },
     ]
   },
   {
@@ -137,7 +170,20 @@ const itemData = [
     title: 'Shoe Laundry',
     url: 'shoe-laundry',
     info: [],
-    content: []
+    content: [
+      { type: 'link', source: 'https://vimeo.com/678840645' },
+      { type: 'image', source: shoeLaundryFull2 },
+      { type: 'image', source: shoeLaundryBrush },
+      { type: 'image', source: shoeLaundryCloth },
+      { type: 'image', source: shoeLaundryBox1 },
+      { type: 'image', source: shoeLaundryBox2 },
+      { type: 'image', source: shoeLaundryBox3 },
+      { type: 'image', source: shoeLaundryBottleTest },
+      { type: 'image', source: shoeLaundryFoam1 },
+      { type: 'image', source: shoeLaundryFoam2 },
+      { type: 'image', source: shoeLaundryFoam3 },
+      { type: 'image', source: shoeLaundryFull1 },
+    ]
   },
   {
     img: hongShingTitle,
@@ -175,7 +221,12 @@ const itemData = [
     title: 'Jordan OG',
     url: 'jordan-og',
     info: [],
-    content: []
+    content: [
+      { type: 'link', source: 'https://vimeo.com/678838793' },
+      { type: 'image', source: jordanTransform1 },
+      { type: 'image', source: jordanTransform2 },
+      { type: 'image', source: jordanTransform3 },
+    ]
   },
   {
     img: bullyTitle,
@@ -199,7 +250,17 @@ const itemData = [
     title: 'Jordan Waves',
     url: 'jordan-waves',
     info: [],
-    content: []
+    content: [
+      { type: 'link', source: 'https://vimeo.com/464076439' },
+      { type: 'image', source: jordanAnimation1 },
+      { type: 'image', source: jordanAnimation2 },
+      { type: 'image', source: jordanAnimationTitle },
+      { type: 'image', source: jordanAnimation5 },
+      { type: 'image', source: jordanAnimation6 },
+      { type: 'image', source: jordanAnimation7 },
+      { type: 'image', source: jordanAnimation3 },
+      { type: 'image', source: jordanAnimation4 },
+    ]
   },
   {
     img: basketballTitle,
@@ -218,6 +279,14 @@ const itemData = [
     title: 'Shattered',
     url: 'shattered',
     info: [],
-    content: []
+    content: [
+      { type: 'image', source: jordanShootTitle },
+      { type: 'image', source: jordanShoot1 },
+      { type: 'image', source: jordanShoot2 },
+      { type: 'image', source: jordanShoot3 },
+      { type: 'image', source: jordanShoot4 },
+      { type: 'image', source: jordanShootTest },
+      { type: 'image', source: jordanShootRed },
+    ]
   },
 ];
