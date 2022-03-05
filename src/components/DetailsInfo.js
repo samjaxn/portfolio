@@ -20,7 +20,6 @@ const DetailsInfo = (props) => {
   return (
   	<div className={classes.root}>
 			<h2>{props.title}</h2>
-			<p>I dont know just some filler text</p>
 			{props.info.map((info, index) => (
 				<p>{info}</p>
 			))}

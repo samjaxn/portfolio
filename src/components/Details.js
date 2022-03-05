@@ -12,7 +12,7 @@ const Details = (props) => {
 	//console.log(props.item);
 
   return (
-			<Grid container spacing={0}>
+			<Grid container spacing={3}>
 				<Grid item xs={12} md={4} lg={4} xl={4}>
 					<DetailsInfo title={props.item.title} info={props.item.info}/>
 				</Grid>

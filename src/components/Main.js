@@ -134,10 +134,9 @@ const itemData = [
     title: 'Knit Effect',
     url: 'knit-effect',
     info: [
-      'testing',
-      'this',
-      '',
-      'test again'
+      `For the longest time I've wanted to create a knitting effect on an object that looked like the object was created from nothing. After learning Houdini and playing around with the sofware I came up with this.`,
+      ` This is the result of a lot of learning and experiementing and is something I am proud of.`,
+      `Tools used: Houdini, Cinema 4D, Redshift`
     ],
     content: [
       { type: 'link', source: 'https://player.vimeo.com/video/679228445?h=5774d8174f' },
@@ -151,30 +150,20 @@ const itemData = [
     ]
   },
   {
-    img: soleDisplaceTitle,
-    title: 'Sole Displacement',
-    url: 'sole-displacement',
-    info: [],
-    content: [
-      { type: 'link', source: 'https://vimeo.com/679224617' },
-      { type: 'image', source: soleDisplace1 },
-      { type: 'image', source: soleDisplace2 },
-      { type: 'image', source: soleDisplace3 },
-      { type: 'image', source: soleDisplace4 },
-      { type: 'image', source: soleDisplace5 },
-      { type: 'image', source: soleDisplace6 },
-    ]
-  },
-  {
     img: shoeLaundryTitle,
     title: 'Shoe Laundry',
     url: 'shoe-laundry',
-    info: [],
+    info: [
+      `Had the pleasure of working Shoe Laundry to create an animation for their shoe cleaning box set.`,
+      `We wanted to create a campaign that centered around the product and what you would get if you purchased a box of their plant-based sustainable shoe cleaning kit.`,
+      `Tools used: Cinema 4D, Redshift`
+    ],
     content: [
       { type: 'link', source: 'https://vimeo.com/678840645' },
       { type: 'image', source: shoeLaundryFull2 },
       { type: 'image', source: shoeLaundryBrush },
       { type: 'image', source: shoeLaundryCloth },
+      { type: 'image', source: shoeLaundryTitle },
       { type: 'image', source: shoeLaundryBox1 },
       { type: 'image', source: shoeLaundryBox2 },
       { type: 'image', source: shoeLaundryBox3 },
@@ -189,7 +178,11 @@ const itemData = [
     img: hongShingTitle,
     title: 'Hong Shing',
     url: 'hong-shing',
-    info: [],
+    info: [
+      `Hong Shing approached us with the idea of promoting their 2021 Lunar New Year product launch. They wanted the look to revolve around the products being launched and it being linked to Lunar New Year.`,
+      `We came up with the idea of the iconic dragon that circles each product and creates a transition whenever it swipes through the cameras path. This creates an effect of showing each product in a very seamless and unique way.`,
+      `Tools used: Cinema 4D, Redshift, After Effects`
+    ],
     content: [
       { type: 'link', source: 'https://vimeo.com/679192898' },
       { type: 'image', source: hongShingDragon },
@@ -214,6 +207,21 @@ const itemData = [
       { type: 'image', source: andrasMain2 },
       { type: 'image', source: andrasWaves1 },
       { type: 'image', source: andrasMain3 },
+    ]
+  },
+  {
+    img: soleDisplaceTitle,
+    title: 'Sole Displacement',
+    url: 'sole-displacement',
+    info: [],
+    content: [
+      { type: 'link', source: 'https://vimeo.com/679224617' },
+      { type: 'image', source: soleDisplace1 },
+      { type: 'image', source: soleDisplace2 },
+      { type: 'image', source: soleDisplace3 },
+      { type: 'image', source: soleDisplace4 },
+      { type: 'image', source: soleDisplace5 },
+      { type: 'image', source: soleDisplace6 },
     ]
   },
   {
