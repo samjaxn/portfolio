@@ -23,11 +23,11 @@ const NavigationLinks = () => {
 }
 
 const Header = () => {
-	let navigate = useNavigate();
+  let navigate = useNavigate();
 
   return (
 		<header className={!isMobile ? 'root header' : 'header'}>
-			<Box sx={{ flexGrow: 1 }}>
+			<Box sx={{ flexGrow: 1 }} width={'100%'}>
 				<Grid container spacing={2} alignItems="center" justifyContent="space-between">
 					<Grid item xs={12} sm={5} md={4} className='navTitle left'>
 						{/* <h2 className='marginZero'><a className='pointer' onClick={e => navigate('/')}>JACKY JACKSON</a></h2>

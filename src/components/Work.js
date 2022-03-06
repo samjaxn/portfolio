@@ -32,6 +32,7 @@ const Work = (props) => {
 
   useEffect(() => {
     console.log(dimensions.width, dimensions.height);
+    console.log(isMobile);
     const debouncedHandleResize = debounce(() => {
       setDimensions({
         height: window.innerHeight,

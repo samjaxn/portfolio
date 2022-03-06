@@ -14,10 +14,10 @@ const Details = (props) => {
   return (
 			<Grid container spacing={3}>
 				<Grid item xs={12} md={4} lg={4} xl={4}>
-					<DetailsInfo title={props.item.title} info={props.item.info}/>
+					<DetailsInfo key={`${props.item.url}-info`} keyName={`${props.item.url}-info`} title={props.item.title} info={props.item.info}/>
 				</Grid>
 				<Grid item xs={12} md={8} lg={8} xl={8}>
-					<DetailsContent img={props.item.img} content={props.item.content}/>
+					<DetailsContent key={`${props.item.url}-info`} keyName={`${props.item.url}-content`} img={props.item.img} content={props.item.content}/>
 				</Grid>
 			</Grid>
   );

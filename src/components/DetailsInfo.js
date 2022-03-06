@@ -5,11 +5,12 @@ import { isMobile } from 'react-device-detect';
 
 const useStyles = makeStyles({
   root: {
-    position: "sticky",
-		top: `${isMobile ? 1 : 8}rem`,
+    position: isMobile ? 'static' : 'sticky',
+	top: `11rem`,
   },
 
 	p: {
+		'marginTop': 0,
 		'marginBottom': 0,
 	}
 });
@@ -18,7 +19,7 @@ const DetailsInfo = (props) => {
 	const classes = useStyles();
 
   return (
-  	<div className={classes.root}>
+  	<div key={props.keyName} className={classes.root}>
 			<h2>{props.title}</h2>
 			{props.info.map((info, index) => (
 				<p>{info}</p>
