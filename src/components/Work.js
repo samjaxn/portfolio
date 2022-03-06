@@ -65,7 +65,7 @@ const Work = (props) => {
 
   const CustomizedImageListItemBarDesktop = styled(ImageListItemBar)`
     .css-dasnyc-MuiImageListItemBar-title {
-      font-size: ${10/colSize}vw;
+      font-size: ${6/colSize}vw;
       line-height: 125%;
     }
   `;
@@ -94,7 +94,7 @@ const Work = (props) => {
             alt={item.title}
             // loading="lazy"
           />
-          {isMobile ? 
+          {/* {isMobile ? 
           <CustomizedImageListItemBarMobile
             sx={{
               background:
@@ -105,8 +105,7 @@ const Work = (props) => {
             title={item.title}
             position="bottom"
           />
-          : null}
-          {/* {hover == index ?  */}
+          : null} */}
           <div style={{transition: 'opacity 0.25s', opacity: hover===index ? 1 : 0}}>
             <CustomizedImageListItemBarDesktop
               sx={{
@@ -114,10 +113,9 @@ const Work = (props) => {
                 'textAlign': 'center',
                 height: '100%',
               }}
-              title={item.title}
+              title={item.title.toUpperCase()}
             />
           </div>
-          {/* : null} */}
         </ImageListItem>
       ))}
     </ImageList>
