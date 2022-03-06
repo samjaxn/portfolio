@@ -134,8 +134,8 @@ const itemData = [
     title: 'Knit Effect',
     url: 'knit-effect',
     info: [
-      `For the longest time I've wanted to create a knitting effect on an object that looked like the object was created from nothing. After learning Houdini and playing around with the sofware I came up with this.`,
-      ` This is the result of a lot of learning and experiementing and is something I am proud of.`,
+      `For the longest time I've wanted to create a knitting effect on an object that looked like the object was created from nothing. After learning Houdini and playing around with the software I came up with this.`,
+      `This personal project is the result of a lot of learning and experimenting and is something I am proud of.`,
       `Tools used: Houdini, Cinema 4D, Redshift`
     ],
     content: [
@@ -198,7 +198,11 @@ const itemData = [
     img: andrasTitle,
     title: 'Andras',
     url: 'andras',
-    info: [],
+    info: [
+      `With the launch of their new site, Andras wanted to add some new logo animations. Together we focused on an approach that matched their aesthetic.`,
+      `I wanted to make something abstract that quickly described who Andras was, bold, exciting, cinematic and unpredictable. The result, was a metallic textured logo that was morphed by noise and then transformed back.`,
+      `Tools used: Cinema 4D and Redshift`
+    ],
     content: [
       { type: 'video', source: andrasMainVideo },
       { type: 'video', source: andrasWavesVideo },
@@ -213,7 +217,10 @@ const itemData = [
     img: soleDisplaceTitle,
     title: 'Sole Displacement',
     url: 'sole-displacement',
-    info: [],
+    info: [
+      `Was working on some R&D for a cool sole transition effect. Created a radial noise in After Effects that I used to drive the animation and the lighting, texturing and displacement were all done with Redshift.`,
+      `Tools used: Cinema 4D, Substance, Redshift and After Effects`
+    ],
     content: [
       { type: 'link', source: 'https://vimeo.com/679224617' },
       { type: 'image', source: soleDisplace1 },
@@ -228,7 +235,10 @@ const itemData = [
     img: jordanTransformationTitle,
     title: 'Jordan OG',
     url: 'jordan-og',
-    info: [],
+    info: [
+      `Small R&D I was testing out for the formation of a Jordan shoe. I liked it so much that I decided to texture and light the scene as well as make a loop from it.`,
+      `Tools used: Cinema 4D, Substance, and Redshift`
+    ],
     content: [
       { type: 'link', source: 'https://vimeo.com/678838793' },
       { type: 'image', source: jordanTransform1 },
@@ -238,9 +248,13 @@ const itemData = [
   },
   {
     img: bullyTitle,
-    title: 'Bully',
-    url: 'bully',
-    info: [],
+    title: 'Bully x Hennessy',
+    url: 'break-barriers',
+    info: [
+      `Had the opportunity to make an animation for Bully x Hennessy and their "Break Barriers" creative incubator program. Bully wanted an animation that encompassed the breaking of barriers and that also felt empowering and ethereal.`,
+      `You can check out the full page and animation on the page at: www.breakbarriers.net`,
+      `Tools used: Cinema 4D and Redshift`
+    ],
     content: [
       { type: 'video', source: bullyAnimation },
       { type: 'image', source: bullyTitle },
@@ -257,7 +271,11 @@ const itemData = [
     img: jordanAnimationTitle,
     title: 'Jordan Waves',
     url: 'jordan-waves',
-    info: [],
+    info: [
+      `A personal project that I wanted to make was this animation that focused on the Jordan shoe and was completely done by me. From the initial planning and ideation stage, all the way to the rendering and final production steps was done by me.`,
+      `This was the first animation that felt like it was something bigger than just a 10 second loop. Doing this taught me a lot and gave me the confidence to continue working on my craft.`,
+      `Tools used: Cinema 4D, Substance, Redshift and After Effects`
+    ],
     content: [
       { type: 'link', source: 'https://vimeo.com/464076439' },
       { type: 'image', source: jordanAnimation1 },
@@ -274,7 +292,10 @@ const itemData = [
     img: basketballTitle,
     title: 'Bounce',
     url: 'bounce',
-    info: [],
+    info: [
+      `Created this animation to test out a cage deform method within Cinema 4D. Works really well when trying to do soft body simulations on a very dense mesh, such as this basketball.`,
+      `Tools used: Cinema 4D and Redshift`
+    ],
     content: [
       { type: 'link', source: 'https://vimeo.com/679222708'},
       { type: 'image', source: basketballTitle },
@@ -286,7 +307,11 @@ const itemData = [
     img: jordanShootTitle,
     title: 'Shattered',
     url: 'shattered',
-    info: [],
+    info: [
+      `While learning substance I wanted to put out a result that showed off the realism and high quality that it offered. All textures were made within Substance and lighting and rendering were done in Redshift.`,
+      `I particularly love the shoe laces and lip tag. Was really happy with how this turned out.`,
+      `Tools used: Cinema 4D, Substance and Redshift`
+    ],
     content: [
       { type: 'image', source: jordanShootTitle },
       { type: 'image', source: jordanShoot1 },

@@ -5,6 +5,7 @@ import { useNavigate, useLocation, Link } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
 import { isMobile } from 'react-device-detect';
 import '../css/Header.css';
+import logo from '../content/logo/logo.png';
 
 const NavigationLinks = () => {
 	let navigate = useNavigate();
@@ -28,13 +29,12 @@ const Header = () => {
 		<header className={!isMobile ? 'root' : null}>
 			<Box sx={{ flexGrow: 1 }}>
 				<Grid container spacing={2} alignItems="center" justifyContent="space-between">
-					<Grid item xs={12} sm={5} md={4} className='navTitle left logo'>
-						{/* <div className='pointer'> */}
-						<h2 className='marginZero'><a className='pointer' onClick={e => navigate('/')}>JACKY JACKSON</a></h2>
-						3D MOTION DESIGNER
-						{/* </div> */}
+					<Grid item xs={12} sm={5} md={4} className='navTitle left'>
+						{/* <h2 className='marginZero'><a className='pointer' onClick={e => navigate('/')}>JACKY JACKSON</a></h2>
+						3D MOTION DESIGNER */}
+						<img src={logo} className='logo pointer' alt="Jacky Jackson" onClick={e => navigate('/')}/>
 					</Grid>
-					<Grid item xs={12} sm={7} md={8} className='navTitle right'>
+					<Grid item xs={12} sm={7} md={8} className='navTitle navigationAlign'>
 						<NavigationLinks />
 					</Grid>
 				</Grid>

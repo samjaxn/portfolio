@@ -1,0 +1,22 @@
+a {
+    color: #fff;
+    transition: all 0.15s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+a:active {
+    text-decoration: none;
+}
