@@ -9,9 +9,9 @@
     padding-right: 10px;
     transition: all 0.15s ease-in-out;
     cursor: pointer;
-    color: #666;
+    color: #000;
 }
 
 .icon:hover {
-    color: #ffffff;
+    color: grey;
 }

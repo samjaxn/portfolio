@@ -63,6 +63,7 @@ const DetailsContent = (props) => {
 				}
 				else if(content.type === 'video'){
 					return(
+						<div className='centerImg'>
 						<ReactPlayer
 							url={content.source}
 							playing={true}
@@ -72,6 +73,7 @@ const DetailsContent = (props) => {
 							width='100%'
          	 				height='100%'
 						/>
+						</div>
 					);
 				}
 				return(

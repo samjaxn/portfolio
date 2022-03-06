@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     // <Container maxWidth={'false'}>
-    <Container maxWidth={'xl'}>
+    <Container maxWidth={'xl'} className='container'>
       <Header />
       <Main />
       <Footer />

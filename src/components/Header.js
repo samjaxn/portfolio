@@ -26,7 +26,7 @@ const Header = () => {
 	let navigate = useNavigate();
 
   return (
-		<header className={!isMobile ? 'root' : null}>
+		<header className={!isMobile ? 'root header' : 'header'}>
 			<Box sx={{ flexGrow: 1 }}>
 				<Grid container spacing={2} alignItems="center" justifyContent="space-between">
 					<Grid item xs={12} sm={5} md={4} className='navTitle left'>

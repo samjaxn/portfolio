@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.container {
+  width: 85% !important;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -41,5 +45,11 @@
 @media (max-width: 599px) {
   .left, .right {
     text-align: center;
+  }
+}
+
+@media (max-width: 840px) {
+  .container {
+    width: 95% !important;
   }
 }

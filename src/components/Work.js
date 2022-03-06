@@ -28,7 +28,7 @@ const Work = (props) => {
     height: window.innerHeight,
     width: window.innerWidth
   });
-  const colSize = dimensions.width > 1260 ? 3 : dimensions.width < 840 ? 1 : (Math.floor(dimensions.width/420));
+  const colSize = dimensions.width > 1500 ? 3 : dimensions.width < 841 ? 1 : 2;
 
   useEffect(() => {
     console.log(dimensions.width, dimensions.height);
@@ -71,7 +71,7 @@ const Work = (props) => {
   `;
 
   return (
-    <ImageList cols={colSize}>
+    <ImageList cols={colSize} gap={10}>
       {props.itemData.map((item, index) => (
         <ImageListItem
         key={index}
