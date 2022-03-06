@@ -7,7 +7,7 @@ const About = () => {
 	
 	const [isLoaded, setIsLoaded] = useState(false);
   return (
-    <Grid container spacing={3}>
+    <Grid container spacing={3} style={{paddingTop: '3rem', paddingBottom: '2rem'}}>
 				<Grid item xs={12} md={6}>
 					<img
 						onLoad={() => {
