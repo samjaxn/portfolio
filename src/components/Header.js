@@ -30,8 +30,6 @@ const Header = () => {
 			<Box sx={{ flexGrow: 1 }} width={'100%'}>
 				<Grid container spacing={2} alignItems="center" justifyContent="space-between">
 					<Grid item xs={12} sm={5} md={4} className='navTitle left'>
-						{/* <h2 className='marginZero'><a className='pointer' onClick={e => navigate('/')}>JACKY JACKSON</a></h2>
-						3D MOTION DESIGNER */}
 						<img src={logo} className='logo pointer' alt="Jacky Jackson" onClick={e => navigate('/')}/>
 					</Grid>
 					<Grid item xs={12} sm={7} md={8} className='navTitle navigationAlign'>
