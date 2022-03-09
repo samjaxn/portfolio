@@ -131,11 +131,12 @@ export default Main;
 const itemData = [
   {
     img: knitShoeTitle,
-    title: 'Knit Effect',
-    url: 'knit-effect',
+    title: 'Pegasus Knit Exploration',
+    url: 'knit-exploration',
     info: [
-      `For the longest time I've wanted to create a knitting effect on an object that looked like the object was created from nothing. After learning Houdini and playing around with the software I came up with this.`,
-      `This personal project is the result of a lot of learning and experimenting and is something I am proud of.`,
+      // `For the longest time I've wanted to create a knitting effect on an object that looked like the object was created from nothing. After learning Houdini and playing around with the software I came up with this.`,
+      // `This personal project is the result of a lot of learning and experimenting and is something I am proud of.`,
+      `An experiment in materiality, seeking to explore forms that appear out of thin air in abstract ways.`,
       `Tools used: Houdini, Cinema 4D, Redshift`
     ],
     content: [
@@ -154,8 +155,9 @@ const itemData = [
     title: 'Shoe Laundry',
     url: 'shoe-laundry',
     info: [
-      `Had the pleasure of working Shoe Laundry to create an animation for their shoe cleaning box set.`,
-      `We wanted to create a campaign that centered around the product and what you would get if you purchased a box of their plant-based sustainable shoe cleaning kit.`,
+      `Had the pleasure of working with Shoe Laundry to create an animation for their shoe cleaning box set.`,
+      // `The aim was to create a campaign that centered around the product and what you would get if you purchased a box of their plant-based sustainable shoe cleaning kit.`,
+      `The aim was to create a campaign that centered around their graphic identity and highlighted the clean look of their plant-based sustainable shoe cleaning kit.`,
       `Tools used: Cinema 4D, Redshift`
     ],
     content: [
@@ -179,8 +181,8 @@ const itemData = [
     title: 'Hong Shing',
     url: 'hong-shing',
     info: [
-      `Hong Shing approached us with the idea of promoting their 2021 Lunar New Year product launch. They wanted the look to revolve around the products being launched and it being linked to Lunar New Year.`,
-      `We came up with the idea of the iconic dragon that circles each product and creates a transition whenever it swipes through the cameras path. This creates an effect of showing each product in a very seamless and unique way.`,
+      `Hong Shing approached us with the idea of promoting their 2021 Lunar New Year product launch. The aim was to feature the themed products, pairing them with traditional imagery associated with the Lunar New Year.`,
+      `Using the dragon as the anchorpoint for storytelling, each swipe through the camera's path switches the object, allowing each product to be showcased in a seamless and dynamic way.`,
       `Tools used: Cinema 4D, Redshift, After Effects`
     ],
     content: [
@@ -199,8 +201,8 @@ const itemData = [
     title: 'Andras',
     url: 'andras',
     info: [
-      `With the launch of their new site, Andras wanted to add some new logo animations. Together we focused on an approach that matched their aesthetic.`,
-      `I wanted to make something abstract that quickly described who Andras was, bold, exciting, cinematic and unpredictable. The result, was a metallic textured logo that was morphed by noise and then transformed back.`,
+      `With the launch of their new site, Andras envisioned their logo taking on different forms and textures.`,
+      `Utilizing an abstract approach, the aim was to create a series of animations that aligned with Andras' bold, cinematic and unpredictable identity.`,
       `Tools used: Cinema 4D and Redshift`
     ],
     content: [
@@ -251,7 +253,7 @@ const itemData = [
     title: 'Bully x Hennessy',
     url: 'break-barriers',
     info: [
-      `Had the opportunity to make an animation for Bully x Hennessy and their "Break Barriers" creative incubator program. Bully wanted an animation that encompassed the breaking of barriers and that also felt empowering and ethereal.`,
+      `Had the opportunity to create a responsive animation for Bully x Hennessy website. The aim was to encapsulate the feeling of breaking barriers, capturing the feeling of empowerment while possessing an ethereal quality.`,
       `You can check out the full page and animation on the page at: www.breakbarriers.net`,
       `Tools used: Cinema 4D and Redshift`
     ],
