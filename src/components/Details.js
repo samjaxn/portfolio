@@ -7,19 +7,16 @@ import { StickyContainer, Sticky } from 'react-sticky';
 import '../css/Details.css';
 
 const Details = (props) => {
-	// const {state} = useLocation();
-	// const { img, title } = state; // Read values passed on state
-	//console.log(props.item);
 
   return (
-			<Grid container spacing={3}>
-				<Grid item xs={12} md={4} lg={4} xl={4}>
-					<DetailsInfo key={`${props.item.url}-info`} keyName={`${props.item.url}-info`} title={props.item.title} info={props.item.info}/>
-				</Grid>
-				<Grid item xs={12} md={8} lg={8} xl={8}>
-					<DetailsContent key={`${props.item.url}-info`} keyName={`${props.item.url}-content`} img={props.item.img} content={props.item.content}/>
-				</Grid>
+		<Grid container spacing={3}>
+			<Grid item xs={12} md={4} lg={4} xl={4}>
+				<DetailsInfo key={`${props.item.url}-info`} keyName={`${props.item.url}-info`} title={props.item.title} info={props.item.info}/>
 			</Grid>
+			<Grid item xs={12} md={8} lg={8} xl={8}>
+				<DetailsContent key={`${props.item.url}-info`} keyName={`${props.item.url}-content`} img={props.item.img} content={props.item.content}/>
+			</Grid>
+		</Grid>
   );
 };
 

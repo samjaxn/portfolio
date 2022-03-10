@@ -3,6 +3,7 @@ import Work from './Work';
 import About from './About';
 import Contact from './Contact';
 import Details from './Details';
+import Reel from './Reel';
 import {
   BrowserRouter,
   Routes,
@@ -116,12 +117,13 @@ const Main = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<Work itemData={itemData} />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="reel" element={<Reel />} />
       {itemData.map((item, index) => (
         <Route key={`${index}`} path={`${item.url}`} element={<Details item={item} />} />
       ))}
+      <Route path="/" element={<Work itemData={itemData} />} />
     </Routes>
   );
 };

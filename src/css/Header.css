@@ -24,8 +24,8 @@
     margin: 0;
     display: inline-flex;
     cursor: pointer;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 .selectedTransparent {
@@ -34,8 +34,8 @@
     margin: 0;
     display: inline-flex;
     cursor: pointer;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 .selectedTransparent:hover {
