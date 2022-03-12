@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import ReactPlayer from 'react-player/lazy'
+import ReactPlayer from 'react-player/lazy';
+import Anime from 'react-anime';
 import '../css/Details.css';
 
 const DetailsContent = (props) => {
@@ -8,6 +9,13 @@ const DetailsContent = (props) => {
 
   return (
   	<div key={props.keyName} className='center'>
+			<Anime
+				easing="easeInOutExpo"
+				direction="normal"
+				translateY={['1rem', '0rem']}
+				opacity={[0, 1]}
+				delay={(el, index) => 175 + index * 125}
+			>
 			{props.content.map((content, index) => {
 				if(content.type === 'link'){
 					return(
@@ -48,6 +56,7 @@ const DetailsContent = (props) => {
 					/>
 				);
 			})}
+			</Anime>
 		</div>
 	);
 };

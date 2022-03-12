@@ -5,6 +5,7 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import { styled } from '@mui/material/styles';
 import { useNavigate } from "react-router-dom";
 import { isMobile } from 'react-device-detect';
+import Anime from 'react-anime';
 import '../css/Work.css';
 
 function debounce(fn, ms) {
@@ -28,7 +29,7 @@ const Work = (props) => {
     height: window.innerHeight,
     width: window.innerWidth
   });
-  const colSize = dimensions.width > 1500 ? 3 : dimensions.width < 841 ? 1 : 2;
+  const colSize = window.innerWidth > 1500 ? 3 : window.innerWidth < 841 ? 1 : 2;
 
   useEffect(() => {
     console.log(dimensions.width, dimensions.height);
@@ -73,6 +74,12 @@ const Work = (props) => {
 
   return (
     <ImageList cols={colSize} gap={10}>
+      <Anime
+				easing="easeInOutExpo"
+				direction="normal"
+				opacity={[0, 1]}
+				delay={(el, index) => 200 + index * 100}
+			>
       {props.itemData.map((item, index) => (
         <ImageListItem
         key={index}
@@ -119,6 +126,7 @@ const Work = (props) => {
           </div>
         </ImageListItem>
       ))}
+      </Anime>
     </ImageList>
   );
 };
