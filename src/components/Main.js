@@ -5,7 +5,7 @@ import Contact from './Contact';
 import Details from './Details';
 import Reel from './Reel';
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Routes,
   Route,
   useLocation 
@@ -123,7 +123,7 @@ const Main = () => {
       {itemData.map((item, index) => (
         <Route key={`${index}`} path={`${item.url}`} element={<Details item={item} />} />
       ))}
-      <Route path="/" element={<Work itemData={itemData} />} />
+      <Route path="*" element={<Work itemData={itemData} />} />
     </Routes>
   );
 };
